@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+/* Обнуление css стилей на странице  */
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+
+
+.header{
+  background-color: #fff;
+  padding: 0 0 15px 0;
+  width: 100%;
+}
+.logo{
+  margin: 0 0 0 60px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8e8e8;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.city{
+  display: inline-block;
+  margin: 20px 0 0 60px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.counter{
+  display: inline-block;
+  margin: 0 0 0 1100px;
 }
 
-.App-link {
-  color: #61dafb;
+.basket{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.counter_value{
+  width: 30px;
+  margin: 15px 0 0 0;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city:hover{
+  text-decoration: underline;
 }
+
+.table_best_offers{
+  padding: 70px 0 50px 0;
+}
+
+.table_best_offers_header{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 1020px 0 60px;
+}
+
+.table_best_offers a{
+  display: inline-block;
+  font-size: 13px;
+  color: #333;
+  opacity: 0.8;
+  margin: 0 0 0 15px;
+}
+
+.table_best_offers a:hover{
+  color: #1C1C1C;
+  opacity: 1;
+  text-decoration: underline ;
+}
+table{
+  display: block;
+  border-collapse: collapse;
+  background-color: #fff;
+  max-width: 1392px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+td{
+  border: 2px solid #D3D3D3;
+  padding: 15px;
+}
+
+td img{
+  display: block;
+  width: 200px;
+  margin: 0 auto 15px auto;
+}
+
+.table-clothes_text{
+  line-height: 25px;
+}
+
+
+.price{
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.art{
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+.table-specially{
+  padding: 70px 0 50px 0;
+}
+.table-specially_header{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 0 0 60px;
+}
+
+.table-clothes_btn-plus{
+  display: inline-block;
+  /* margin: 0 0 0 83px; */
+}
+
+.table-clothes_btn-minus{
+  display: inline-block;
+  margin: 0 0 0 50px;
+}
+
+.counter_btn{
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+
+
